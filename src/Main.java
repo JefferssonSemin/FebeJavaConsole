@@ -1,18 +1,9 @@
-package trabalho1febe;
-
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
 
-/**
- *
- * @author Jeffersson semin
- */
-public class Trabalho1Febe {
+public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         List<Integer> listaNumero = new ArrayList();
@@ -41,18 +32,18 @@ public class Trabalho1Febe {
         for (Integer num : listaNumero) {
             total = +num;
         }
-        
+
         for (Integer num : listaNumero) {
             total = +num;
         }
-        
-        calculaFatorial()
+
+
 
         Integer mediaAr = total / listaNumero.size();
 
         JOptionPane.showMessageDialog(null, "A média aritmetica é" + String.valueOf(mediaAr), "Mensagem final", JOptionPane.INFORMATION_MESSAGE);
-    }
 
+    }
     public Integer calculaFatorial(Integer menorNum) {
         Integer i = 0;
         while (menorNum > 0) {
@@ -61,4 +52,5 @@ public class Trabalho1Febe {
         }
         return i;
     }
+
 }
